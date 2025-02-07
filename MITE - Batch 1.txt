@@ -1,0 +1,39 @@
+MITE - Batch 1
+
+Greedy
+Divide and Conquer
+Dynamic Programming
+
+1. Read the item names from kart which is size of 10 in array
+
+
+Initialize array with SIZE = 10
+DISPLAY array[index]
+Repeat index 1 to 10
+
+
+
+2. Consider the array contains 10 employees annual salary, now you gonna update take home after income tax deduction on each
+eg:
+[12.5,9.2,4.5,19.5,2.5,56.8]
+10.6, 9.10, 4.47, 15.6, 2.5, 39.76
+
+no tax upto 4
+4-8>> 5, 8-12>> 10, 12-16>> 15, 16-20>>20, 20-24>>25, 24>> 30
+eg: 12.5 - (12.5*0.15) or 12.5*15/100 - 12.5
+
+
+
+Assignments:
+1. Find the Second Minimum in array size of 10 without sorting
+eg:12.5,9.2,4.5,19.5,2.5,56.8
+4.5
+
+2. Find the Number of debits happened in array of account transactions
+eg: 900,1500,600,1200,400
+2
+
+3. Find the First duplicate in the array size of 10
+eg: 12,9,5,8,4,5,10
+5
+
