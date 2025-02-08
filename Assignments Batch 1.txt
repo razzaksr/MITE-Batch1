@@ -12,3 +12,8 @@ eg: 900,1500,600,1200,400
 3. Find the First duplicate in the array size of 10
 eg: 12,9,5,8,4,5,10
 5
+
+
+Day2:
+1. Inversion Count of array using DC
+2. Prefix and Postfix Sum of array

@@ -24,3 +24,65 @@ eg: 12.5 - (12.5*0.15) or 12.5*15/100 - 12.5
 
 
 
+Day2:
+
+1. Equilibrium Index of account balance in that day you can see the balances of past and post are equals
+
+int[] arr = {10, 20, 30, 10, 10, 10, 30, 20, 10, 10};
+System.out.println(equilibriumIndex(arr)); // Output: Can't find Equilibrium day
+int[] myStatement = {-7, 1, 5, 2, -4, 3, 0};
+day is : 3
+
+2. Array rotation
+Array rotation clock and anti-clock
+rotation: 2
+original:
+    0         1         2      3             4          5          6                                                                              
+[Node, Django, Vue, Express, Spring, Flask, Angular, 
+    7           8
+React, Hibernate]
+anti-clock
+Vue Express Spring Flask Angular React Hibernate Node Django
+clock
+React Hibernate Node Django Vue Express Spring Flask Angular
+
+
+3. Finding the maximum sub profit from array of 10 where the revenue of each days mentioned.
+
+eg:
+2, -4, 1, 9, -6, 7, -3
+
+4. A chocolate factory is packing chocolates into packets. The chocolate packets here represent an array arr of N number of integer values. The task is to find the empty packets(0) of chocolate and push it to the end of the conveyor belt(array).
+Input:
+N = 8
+arr = [1, 0, 2, 3, 0, 4, 5, 0]
+Output:
+[1, 2, 3, 4, 5, 0, 0, 0]
+
+
+5. You are given a string s consisting of n characters which are either 'X' or 'O'.
+A move is defined as selecting three consecutive characters of s and converting them to 'O'. Note that if a move is applied to the character 'O', it will stay the same.
+Return the minimum number of moves required so that all the characters of s are converted to 'O'.
+Example 1:
+Input: s = "XXX"
+Output: 1
+Explanation: XXX -> OOO
+We select all the 3 characters and convert them in one move.
+Example 2:
+Input: s = "XXOX"
+Output: 2
+Explanation: XXOX -> OOOX -> OOOO
+We select the first 3 characters in the first move, and convert them to 'O'.
+Then we select the last 3 characters and convert them so that the final string contains all 'O's.
+Example 3:
+Input: s = "OOOO"
+Output: 0
+Explanation: There are no 'X's in s to convert.
+
+
+Lab:
+1. String is substring of another or not
+2. Twisted Prime number
+3. Missing min element
+
+
