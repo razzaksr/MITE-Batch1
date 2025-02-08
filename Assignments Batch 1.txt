@@ -15,5 +15,81 @@ eg: 12,9,5,8,4,5,10
 
 
 Day2:
-1. Inversion Count of array using DC
-2. Prefix and Postfix Sum of array
+1. You are working for an e-commerce company that deals with a large volume of customer orders. The company wants to optimize its warehouse operations by analyzing the efficiency of order processing.
+The goal is to count the number of inversion pairs in the order processing times to identify potential inefficiencies. An inversion pair in this context is defined as a situation where a later order (in terms of processing sequence) took less time to process than an earlier order. By identifying these inversions, you can pinpoint areas where the warehouse team may need to improve their workflow or processes.
+Input
+An array P[] of n integers representing the processing times of orders, in the order they were processed.
+Output
+The count of inversion pairs in the array.
+
+Example
+Input:
+P[] = [30, 45, 25, 60, 20]
+Output:
+The inversion count is 5
+Explanation: There are 5 inversion pairs in the array:
+(45, 25) where 45 > 25 and 2 < 3
+(45, 20) where 45 > 20 and 2 < 5
+(30, 25) where 30 > 25 and 1 < 3
+(30, 20) where 30 > 20 and 1 < 5
+(60, 20) where 60 > 20 and 4 < 5
+
+Input:  A[] = [1, 9, 6, 4, 5]
+Output: The inversion count is 5
+There are 5 inversions in the array: (9, 6), (9, 4), (9, 5), (6, 4), (6, 5)
+
+
+
+2. You work as a software engineer for a company that manages online retail stores. The company wants to implement a feature that provides real-time insights into daily sales trends. One of the key metrics is the cumulative sales amount up to a specific hour of the day.
+
+The goal is to compute the prefix sum of the sales array, where each element in the array represents the sales amount at a specific hour. The prefix sum at any given hour is the total sales amount from the start of the day up to that hour.
+Input
+An array Sales[] of n integers representing the sales amount at each hour of the day.
+Output
+An array PrefixSum[] of n integers where PrefixSum[i] is the cumulative sales amount from the start of the day up to hour i.
+
+Example
+Input:
+Sales[] = [10, 20, 15, 30, 25]
+Output:
+PrefixSum[] = [10, 30, 45, 75, 100]
+Explanation: The prefix sums are calculated as follows:
+PrefixSum[0] = 10
+PrefixSum[1] = 10 + 20 = 30
+PrefixSum[2] = 10 + 20 + 15 = 45
+PrefixSum[3] = 10 + 20 + 15 + 30 = 75
+PrefixSum[4] = 10 + 20 + 15 + 30 + 25 = 100
+
+3. You are a data analyst for a logistics company that tracks the fuel consumption of delivery vehicles throughout their routes. The company wants to optimize fuel usage by analyzing the remaining fuel capacity after each delivery point.
+The goal is to compute the postfix sum of the fuel consumption array, where each element in the array represents the fuel consumed at a specific delivery point. The postfix sum at any given point is the total fuel consumption from that point to the end of the route.
+Input
+An array Fuel[] of m integers representing the fuel consumed at each delivery point.
+Output
+An array PostfixSum[] of m integers where PostfixSum[i] is the total fuel consumption from delivery point i to the end of the route.
+
+Example
+Input:
+Fuel[] = [5, 10, 3, 7, 8]
+Output:
+PostfixSum[] = [33, 28, 18, 15, 8]
+Explanation: The postfix sums are calculated as follows:
+PostfixSum[0] = 5 + 10 + 3 + 7 + 8 = 33
+PostfixSum[1] = 10 + 3 + 7 + 8 = 28
+PostfixSum[2] = 3 + 7 + 8 = 18
+PostfixSum[3] = 7 + 8 = 15
+PostfixSum[4] = 8
+
+4. You work for a mobile app development company that specializes in creating educational apps for kids. One of your tasks is to develop a game that helps children learn and recognize different digits.
+The game includes a feature where a list of numbers is provided, and the child needs to identify all the distinct digits present in that list. The goal is to find all unique digits from the given array of integers.
+
+Input
+An array N[] of k integers.
+Output
+A sorted list of distinct digits present in the array.
+
+Example
+Input:
+N[] = {111, 222, 333, 4444, 666}
+Output:
+[1, 2, 3, 4, 6]
+
