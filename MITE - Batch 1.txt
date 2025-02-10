@@ -91,9 +91,6 @@ Lab:
 Day 3:
 1. Validate the signing up process in the income tax e filing portal with customer details such as fullname, email, aadhaar, pan, username, password
 
-
-
-
 Pattern	Description
 ^		Start of string
 $		End of string
@@ -104,14 +101,10 @@ $		End of string
 \w		Any word character
 \s		Any whitespace
 
-
-
 2. A chatbot needs to analyze user messages. It must count the number of vowels and consonants in a given message to determine if the message is easy to read (more vowels) or complex (more consonants).
 Example:
 Input: "Hello AI"
 Output: Vowels: 4, Consonants: 3
-
-
 
 3. Using recursion find the Sum of array elements
 input:
@@ -131,7 +124,6 @@ Input
 coins = [100, 200, 500]  , amount = 1100
 Output
 3
-
 amount = 8700
 Output:
 18
