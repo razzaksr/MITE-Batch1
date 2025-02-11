@@ -139,7 +139,49 @@ output:
 
 
 
+Day 4:
+1. merge sort and inversion count using divide and conquer
 
+2. Quick sort
+
+3. You are organizing an auction and need to find the top k bidders to finalize the winners. By identifying the k-th highest bid, you can determine the qualifying bids for the top positions.
+Task: Given an array of integers representing the bids placed by participants, write a program to find the k-th highest bid using the Quickselect algorithm.
+Input: bids = [12000, 50000, 30000, 45000, 60000], k = 2
+Output: 50000
+
+Explanation:
+- The sorted list of bids is [12000, 30000, 45000, 50000, 60000].
+- The 2nd highest bid is 50000.
+
+Dynamic Programming:
+4. Fibonacci Sequence
+
+5. Factorial using DP:
+
+6. Word conversion:
+Imagine you are a software engineer working on a document editing application. The application allows users to edit and correct typos in their documents. One of the features you are developing is a tool to calculate the minimum number of operations required to transform one word into another. This feature is crucial for suggesting the most efficient edits and corrections to the users.
+
+Task: Given two words, implement a function that calculates the minimum number of operations required to convert the first word into the second word. The allowed operations are:
+
+Insert a character
+Delete a character
+Replace a character
+
+Input:
+Two strings word1 and word2 representing the original word and the target word, respectively.
+
+Output:
+An integer representing the minimum number of operations required to convert word1 into word2.
+
+Example:
+Input: word1 = "horse", word2 = "rose"
+Output: 2
+
+Explanation:
+- To transform "horse" into "ros", the following 3 operations are required:
+  1. Replace 'h' with 'r' -> "rorse"
+  2. Delete 'o' -> "rrse"
+  3. Replace 'r' with 'o' -> "rose"
 
 
 
