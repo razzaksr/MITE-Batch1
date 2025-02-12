@@ -139,6 +139,49 @@ output:
 
 
 
+Lab day 3:
+1. A customer support system logs multiple issues reported by users. The first unique word in the log is often the most critical issue. Given a message, find the first non-repeating character, which represents the first unique issue. If all characters repeat, return -1.
+Example:
+Input: "customer service issue"
+Output: "c" (since 'c' appears first and does not repeat)
+Input: "aabbcc"
+Output: -1
+
+2. A spy receives a secret message that is written backward. He needs your help to decode it. Write a function that takes the encoded message (a reversed string) and returns the original message.
+Example:
+Input: "sdrawkcab"
+Output: "backwards"
+
+3. Using recursion find the inversion of count
+You are working for an e-commerce company that deals with a large volume of customer orders. The company wants to optimize its warehouse operations by analyzing the efficiency of order processing.
+The goal is to count the number of inversion pairs in the order processing times to identify potential inefficiencies. An inversion pair in this context is defined as a situation where a later order (in terms of processing sequence) took less time to process than an earlier order. By identifying these inversions, you can pinpoint areas where the warehouse team may need to improve their workflow or processes.
+Input
+An array P[] of n integers representing the processing times of orders, in the order they were processed.
+Output
+The count of inversion pairs in the array.
+
+Example
+Input:
+P[] = [30, 45, 25, 60, 20]
+Output:
+The inversion count is 5
+Explanation: There are 5 inversion pairs in the array:
+(45, 25) where 45 > 25 and 2 < 3
+(45, 20) where 45 > 20 and 2 < 5
+(30, 25) where 30 > 25 and 1 < 3
+(30, 20) where 30 > 20 and 1 < 5
+(60, 20) where 60 > 20 and 4 < 5
+
+
+4. As part of a financial data analysis tool, you are tasked with finding a group of four distinct numbers within an array that add up to a target sum T. Write a function that takes an array of integers and a target sum T as input and returns all unique quadruples [a, b, c, d] such that a + b + c + d = T.
+
+
+
+
+
+
+
+
 Day 4:
 1. merge sort and inversion count using divide and conquer
 
@@ -186,55 +229,59 @@ Explanation:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Lab:
-1. A customer support system logs multiple issues reported by users. The first unique word in the log is often the most critical issue. Given a message, find the first non-repeating character, which represents the first unique issue. If all characters repeat, return -1.
+Day 5: Hash table, Sliding window
+1. Using hash table to find array frequency
+Frequency Count of Elements in an Array
+You are analyzing survey results and need to count the frequency of each response.
+Task:
+Given an array of integers, count the frequency of each element using a HashMap.
 Example:
-Input: "customer service issue"
-Output: "c" (since 'c' appears first and does not repeat)
-Input: "aabbcc"
-Output: -1
-
-2. A spy receives a secret message that is written backward. He needs your help to decode it. Write a function that takes the encoded message (a reversed string) and returns the original message.
-Example:
-Input: "sdrawkcab"
-Output: "backwards"
-
-3. Using recursion find the inversion of count
-You are working for an e-commerce company that deals with a large volume of customer orders. The company wants to optimize its warehouse operations by analyzing the efficiency of order processing.
-The goal is to count the number of inversion pairs in the order processing times to identify potential inefficiencies. An inversion pair in this context is defined as a situation where a later order (in terms of processing sequence) took less time to process than an earlier order. By identifying these inversions, you can pinpoint areas where the warehouse team may need to improve their workflow or processes.
-Input
-An array P[] of n integers representing the processing times of orders, in the order they were processed.
-Output
-The count of inversion pairs in the array.
-
-Example
 Input:
-P[] = [30, 45, 25, 60, 20]
+arr = [1, 2, 1, 3, 2, 1]
 Output:
-The inversion count is 5
-Explanation: There are 5 inversion pairs in the array:
-(45, 25) where 45 > 25 and 2 < 3
-(45, 20) where 45 > 20 and 2 < 5
-(30, 25) where 30 > 25 and 1 < 3
-(30, 20) where 30 > 20 and 1 < 5
-(60, 20) where 60 > 20 and 4 < 5
+1 -> 3  
+2 -> 2  
+3 -> 1
 
+2. Find Two Sum Pairs
+You are designing a finance app and need to identify transactions that sum up to a target amount.
+Task:
+Find two numbers from an array that add up to a target value using a HashMap.
+Example:
+Input:
+arr = [2, 7, 11, 15], target = 9
+Output:
+[2, 7]
+Input:
+arr = [2, 7, 11, 15], target = 10
+Output:
+[]
+Input:
+arr = [2, 7, 11, 15], target = 13
+Output:
+[2, 11]
 
-4. As part of a financial data analysis tool, you are tasked with finding a group of four distinct numbers within an array that add up to a target sum T. Write a function that takes an array of integers and a target sum T as input and returns all unique quadruples [a, b, c, d] such that a + b + c + d = T.
+3. E-Commerce Database using Hashtable
+
+Sliding window
+4. Finding the maximum or minimum sum of a subarray of a fixed length.
+Input:
+arr = 1, 2, 3, 4, 5, 6, 7, 8, 9
+k = 3
+Output:
+24
+
+5. Minimum Window Substring
+User Behavior Analysis on E-commerce Platform
+An e-commerce platform tracks user activities like "search product," "add to cart," and "checkout." To optimize user journeys, analysts want to find the shortest sequence containing all these events.
+
+Problem Statement:
+Given a list of user activities, find the smallest window containing all key actions.
+
+Example:
+Input:
+activities = ["browse", "search product", "add to cart", "checkout", "feedback"]  
+required_actions = ["search product", "checkout"]
+Output:
+["search product", "add to cart", "checkout"]
 

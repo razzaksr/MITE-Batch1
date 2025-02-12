@@ -1,7 +1,5 @@
 package day4;
 
-import java.util.Arrays;
-
 public class WordConversionViaDP {
     public static int convert(String src, String dest){
         int rowSize = src.length()+1;
@@ -17,6 +15,20 @@ public class WordConversionViaDP {
             poss[0][col]=col;
         }
         
+
+        // find min or diagonal for comparison
+        for(int row=1;row<rowSize;row++){
+            for(int col=1;col<colSize;col++){
+                if(src.charAt(row-1)==dest.charAt(col-1)){
+                    poss[row][col] = poss[row-1][col-1];
+                }
+                else{
+                    poss[row][col] = 1+Math.min(Math.min(poss[row-1][col-1],poss[row-1][col]),
+                    poss[row][col-1]);
+                }
+            }
+        }
+
         return poss[rowSize-1][colSize-1];
     }
     public static void main(String[] args) {
