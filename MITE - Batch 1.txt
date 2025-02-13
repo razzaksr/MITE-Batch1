@@ -285,3 +285,46 @@ required_actions = ["search product", "checkout"]
 Output:
 ["search product", "add to cart", "checkout"]
 
+
+
+
+
+Day 6:
+1. findMaxSubSum using sliding window
+2. Customer analysis
+3. Heart rate analysis
+Sliding Window Maximum
+Heart Rate Monitoring in Healthcare:
+A wearable health device monitors a user's heart rate during exercise. To provide health insights, the device must track the highest heart rate over every 1-minute interval.
+Problem Statement: Given an array heartRates[] and an integer k, find the maximum heart rate for each sliding window of size k.
+Input1:
+heartRates = [72, 80, 75, 90, 85, 92, 88]
+k = 3
+Output1:
+Maximum heart rates for each sliding window:
+[80, 90, 90, 92, 92]
+
+heartRates = [70, 85, 60, 95, 82, 74, 90]
+k = 2
+Maximum heart rates for each sliding window:
+[85, 85, 95, 95, 82, 90]
+Window [70, 85] → max = 85
+Window [85, 60] → max = 85
+Window [60, 95] → max = 95
+Window [95, 82] → max = 95
+Window [82, 74] → max = 82
+Window [74, 90] → max = 90
+
+
+3. Given an array of integers temperatures represents the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.
+Example 1:
+Input: temperatures = [73,74,75,71,69,72,76,73]
+Output: [1,1,4,2,1,1,0,0]
+
+Example 2:
+Input: temperatures = [30,40,50,60]
+Output: [1,1,1,0]
+
+Example 3:
+Input: temperatures = [30,60,90]
+Output: [1,1,0]

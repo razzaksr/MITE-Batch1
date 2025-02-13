@@ -1,4 +1,4 @@
-package day5;
+package day6;
 
 import java.util.Hashtable;
 import java.util.List;
@@ -18,21 +18,39 @@ public class MinimumSubStrViaSW {
             requiredTable.put(required.get(index), requiredTable.getOrDefault(required.get(index), 0)+1);
         }
 
-        System.out.println(requiredTable);
+        //System.out.println(requiredTable);
 
         int right=0,left=0, matched = 0;
 
         for(;right<current.size();right++){
+            
             currentTable.put(current.get(right), currentTable.getOrDefault(current.get(right), 0)+1);
-            if(requiredTable.getOrDefault(current.get(right),0)>0){
+            
+            if(requiredTable.containsKey(current.get(right))){
                 matched++;
             }
 
-            
-        }
-        System.out.println(currentTable);
+            while(matched == requiredTable.size()){
+                // find ms, ml
+                if(minLength>=right-left+1){
+                    minLength=right-left+1;
+                    minStart=left;
+                }
 
-        return current;
+                // when to stop this
+                String currentOne = current.get(left);
+                if(currentTable.containsKey(currentOne)){
+                    currentTable.put(currentOne, currentTable.getOrDefault(currentOne, 0)-1);
+                    if(requiredTable.containsKey(currentOne)){
+                        matched--;
+                    }
+                }
+                left++;
+            }
+        }
+        // System.out.println(currentTable);
+
+        return current.subList(minStart, minStart+minLength);
     }
 
     public static void main(String[] args) {
@@ -44,6 +62,7 @@ public class MinimumSubStrViaSW {
             "search","checkout"
         ).toList();
 
-        findSubStr(current, required);
+        List<String> window = findSubStr(current, required);
+        System.out.println(window);
     }
 }
